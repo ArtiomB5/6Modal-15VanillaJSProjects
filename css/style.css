@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+.header .header__banner {
+  min-width: 240px;
+  min-height: 120px;
+  width: 20%;
+  height: 20%;
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+}
+.header .header__banner .header__title {
+  padding-bottom: 90px;
+}
+.header .header__banner .header__button {
+  width: 100px;
+  height: 30px;
+  text-transform: uppercase;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.header .header__banner .header__button:hover {
+  background-color: lightgreen;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  display: none;
+}
+.modal-overlay .modal-overlay__box {
+  min-width: 240px;
+  min-height: 120px;
+  width: 25%;
+  height: 25%;
+  background-color: lightgray;
+  position: relative;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.modal-overlay .modal-overlay__box .modal-overlay__button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.modal-overlay.visibility-on {
+  display: grid;
+}
